@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candidature – NOVEA</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body class="page-candidature">
+
+  <main class="main-section">
+    <section class="form-section">
+      <h1>Postule chez NOVEA</h1>
+      <p>Rejoins une agence d’élite. Nous attendons ta candidature avec attention.</p>
+
+      <form action="https://formspree.io/f/mdkgolrd" method="POST" class="formulaire">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" required />
+
+        <label for="age">Âge</label>
+        <input type="number" id="age" name="age" required min="18" />
+
+        <label for="instagram">Instagram</label>
+        <input type="text" id="instagram" name="instagram" placeholder="@exemple" required />
+
+        <label for="pays">Pays</label>
+        <input type="text" id="pays" name="pays" required />
+
+        <label for="experience">As-tu déjà travaillé avec une agence ?</label>
+        <textarea id="experience" name="experience" rows="3"></textarea>
+
+        <label for="motivation">Pourquoi souhaites-tu rejoindre NOVEA ?</label>
+        <textarea id="motivation" name="motivation" rows="4" required></textarea>
+
+        <label for="idee">Une idée que tu aimerais réaliser avec notre agence ?</label>
+        <textarea id="idee" name="idee" rows="3"></textarea>
+
+        <button type="submit" class="btn">Envoyer la candidature</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 NOVEA. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+    </div>
+  </footer>
+
+</body>
+</html>

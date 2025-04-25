@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ – NOVEA</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .faq-page {
+      padding: 80px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--turquoise);
+      margin-bottom: 20px;
+    }
+
+    .faq-question {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 15px;
+      background-color: var(--turquoise);
+      border-radius: 8px;
+      color: var(--gris-fonce);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 15px;
+      background-color: #f7f7f7;
+      border-radius: 0 0 8px 8px;
+      color: var(--gris-fonce);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+  </style>
+</head>
+<body class="faq-page">
+  <div class="container">
+    <h1>Foire aux Questions</h1>
+
+    <div class="faq-item">
+      <div class="faq-question">Comment fonctionne l’accompagnement de NOVEA au quotidien ?</div>
+      <div class="faq-answer">Chaque semaine, tu as 2 à 3 rendez-vous avec ton coach dédié. Tu nous envoies du contenu brut chaque jour (vidéos/photos), et on s’occupe du reste : édition, stratégie, publications, gestion des abonnés.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Combien de temps faut-il pour voir les premiers résultats ?</div>
+      <div class="faq-answer">En général, les premiers résultats visibles apparaissent entre 1 à 2 mois selon ta régularité et ton implication.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Est-ce que je dois déjà avoir un compte OnlyFans actif ?</div>
+      <div class="faq-answer">Non, ce n’est pas nécessaire. On peut partir de zéro et tout créer avec toi.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Qui crée les contenus ? Est-ce moi ou l’agence ?</div>
+      <div class="faq-answer">Tu fournis le contenu brut (photos/vidéos), l’agence s’occupe de l’édition, du montage et de la stratégie de diffusion.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Quels sont les engagements contractuels ?</div>
+      <div class="faq-answer">Tu t’engages à produire du contenu régulièrement. Aucun contenu n’est imposé. Il n’y a pas d’engagement à long terme : les contrats sont renouvelables tous les 2 à 3 mois.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Peut-on quitter l’agence à tout moment ?</div>
+      <div class="faq-answer">Une période d’essai permet de tester l’accompagnement. Ensuite, une rupture est possible à la fin du cycle en cours.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Est-ce que je peux rester anonyme ?</div>
+      <div class="faq-answer">Oui, ton anonymat est garanti auprès du public. Nous ne communiquons jamais sur les modèles que nous accompagnons.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Comment se passent les revenus ?</div>
+      <div class="faq-answer">Les revenus sont reversés chaque semaine via les canaux définis ensemble lors du contrat.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Quels réseaux sont pris en charge ?</div>
+      <div class="faq-answer">Instagram, Threads, TikTok, et d’autres selon ton profil. On adapte les plateformes en fonction de ce que tu proposes.</div>
+    </div>
+  </div>
+
+  <script>
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach(question => {
+      question.addEventListener('click', () => {
+        question.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
